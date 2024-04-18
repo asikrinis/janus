@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Establecer estilos globales para los elementos de mat-card */
+.mat-card {
+  margin: 1rem; /* Agregar un margen alrededor de cada card para evitar que se vea cortado */
+  width: auto; /* O establece un ancho específico si lo prefieres */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Opcional: agrega una sombra para mejor visibilidad */
+}
+
+.mat-card-content {
+  padding: 1rem; /* Añadir padding para que el contenido no se vea tan apretado */
+}
+
+.mat-card-title {
+  font-size: 1.5rem; /* Ajustar el tamaño del título si es necesario */
+}
+
+.mat-icon {
+  color: #757575; /* Cambiar el color de los íconos si es necesario */
+  margin-right: 0.5rem; /* Agregar espacio entre el ícono y el texto */
+}
+
+.mat-list-item {
+  border-bottom: 1px solid #eee; /* Opcional: añadir una línea para separar los items */
+}
+
+.mat-list-item:last-child {
+  border-bottom: none; /* Evitar doble borde en el último item */
+}
+
+a {
+  color: inherit; /* Asegurarse de que los enlaces tengan el color del texto en el que se encuentran */
+  text-decoration: none; /* Opcional: eliminar el subrayado del enlace */
+}
+
+a:hover {
+  text-decoration: underline; /* Opcional: agregar subrayado al pasar el ratón sobre el enlace para indicar que es interactivo */
+}
+
+.mat-paginator {
+  margin-top: 1rem; /* Añadir espacio arriba del paginador */
+}
